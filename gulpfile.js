@@ -1,12 +1,13 @@
 //////////
 // Modules
 
-const gulp          = require('gulp'),
-      terser        = require('gulp-terser'),     // Minify js
-      babel         = require('gulp-babel'),      // Transpiler
-      webpack       = require('webpack-stream'),  // Bundler
-      rename        = require('gulp-rename'),
-      { src, dest } = require('gulp');
+const gulp                = require('gulp'),
+      terser              = require('gulp-terser'),     // Minify js
+      csso                = require('gulp-csso'),       // Minify css
+      babel               = require('gulp-babel'),      // Transpiler
+      webpack             = require('webpack-stream'),  // Bundler
+      rename              = require('gulp-rename'), 
+      { src, dest, watch} = require('gulp');
 
 ////////////
 // Variables
@@ -26,6 +27,14 @@ var pathsJs = {
   out: paths.dist + 'js'
 };
 
+// Css source
+var pathsCss = {
+  in: [
+    paths.src + 'css/*.css'
+  ],
+  out: paths.dist + 'css'
+};
+
 //////////
 // Tasks
 
@@ -43,14 +52,24 @@ function jsTask() {
   )
 }
 
+
+// Compile css
+function cssTask() {
+  return (
+      src(pathsCss.in)
+      .pipe(csso())
+      .pipe(dest(pathsCss.out))
+  )
+}
+
+
 // Watch
 function watchTask(){
-  gulp.watch(
-      [paths.src + 'js/**/*.js'],
-      gulp.parallel(jsTask)
-  );
+  watch( paths.src + 'js/**/*.js', jsTask );
+  watch( paths.src + 'css/**/*.css', cssTask );
 }
 
 // Exports
 exports.js = jsTask;
+exports.css = cssTask;
 exports.watch = watchTask;
