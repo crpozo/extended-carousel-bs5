@@ -4,8 +4,9 @@ import Slider from './slider-bs5'
 (function () {
 
   var initialize = function() {
-    const slider = new Slider("extended-carousel");
-    const slider2 = new Slider("extended-carousel-2");
+    document.querySelectorAll(`.carousel[data-ec-toggle="${Slider.defaultSelector}"]`).forEach((el) => {
+      const slider = new Slider(el);
+    });
   }
 
   // in case the document is already rendered
