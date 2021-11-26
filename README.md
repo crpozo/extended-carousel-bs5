@@ -17,7 +17,7 @@ Number of slideshows       :   data-ec-size="4"
 Thumbnail slider           :   data-ec-thumbnail="true"
 ```
 
-Demo inside dist/index.html
+Demo inside src/index.html
 
 # Usage
 
