@@ -1,5 +1,5 @@
 {
-  "name": "@werkraum/extended-carousel-bs5",
+  "name": "extended-carousel-bs5",
   "version": "1.0.0",
   "description": "Extended Slider based on Bootstrap 5 using only carousel component and vanilla js.",
   "main": "index.js",
@@ -15,7 +15,9 @@
   "keywords": [
     "slider",
     "carousel",
-    "bootstrap5"
+    "bootstrap5",
+    "responsive",
+    "thumbnail"
   ],
   "author": "Carlos Pozo",
   "license": "ISC",
