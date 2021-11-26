@@ -47,7 +47,7 @@ function jsTask() {
 			presets: ['@babel/preset-env']
 		}))
     .pipe(webpack({mode: "production"}))
-    .pipe(rename('slider-bs5.js'))
+    .pipe(rename('extended-carousel.js'))
     .pipe(dest(pathsJs.out))
   )
 }

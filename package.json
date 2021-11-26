@@ -1,7 +1,7 @@
 {
-  "name": "slider-bs5",
+  "name": "@werkraum/extended-carousel-bs5",
   "version": "1.0.0",
-  "description": "Bootstrap 5 extended slider  fuctionality",
+  "description": "Extended Slider based on Bootstrap 5 using only carousel component and vanilla js.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

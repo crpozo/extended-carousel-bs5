@@ -1,10 +1,13 @@
 
-import Slider from './slider-bs5'
+import Slider from './extended-carousel'
 
 (function () {
 
   var initialize = function() {
     document.querySelectorAll(`.carousel[data-ec-toggle="${Slider.defaultSelector}"]`).forEach((el) => {
+      const slider = new Slider(el);
+    });
+    document.querySelectorAll(`[data-ec-thumbnail="true"]`).forEach((el) => {
       const slider = new Slider(el);
     });
   }

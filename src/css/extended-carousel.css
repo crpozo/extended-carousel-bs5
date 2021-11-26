@@ -2,10 +2,11 @@
 [data-ec-toggle] .carousel-inner .carousel-item-next,
 [data-ec-toggle] .carousel-inner .carousel-item-prev {
   display: flex;
+  justify-content: space-around;
 }
 
-[data-ec-toggle] .carousel-item {
-  transition: none;
+[data-ec-thumbnail] [data-slide-number] {
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
@@ -18,12 +19,13 @@
   [data-ec-toggle] .carousel-inner .carousel-item > div:nth-child(-n+2) {
     display: block;
   }
-
+  
   [data-ec-toggle] .carousel-inner .carousel-item-next, 
   [data-ec-toggle] .carousel-inner .carousel-item-end.active { 
     transform: translateX(50%);
     transition: transform 0.5s linear;
   }
+  
   [data-ec-toggle] .carousel-inner .carousel-item-start.active, 
   [data-ec-toggle] .carousel-inner .carousel-item-prev{ 
     transform: translateX(-50%);
@@ -39,5 +41,11 @@
 @media (max-width: 767px) {
   [data-ec-toggle] .carousel-inner .carousel-item > div:first-child {
     display: block;
+  }
+}
+
+@media (min-width: 767px) { 
+  [data-ec-toggle] .carousel-item {
+    transition: none;
   }
 }

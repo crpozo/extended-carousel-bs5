@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/slider-bs5.css">
+    <link rel="stylesheet" href="./css/extended-carousel.css">
 
     <title>Document</title>
   </head>
@@ -144,7 +144,7 @@
 <section>
   <!-- CONTENT MODUL TEXT START -->
   <div class="container my-5">
-    <div id="recipeCarousel4" class="carousel slide" data-ec-toggle="extended-carousel" data-ec-size="3">
+    <div id="recipeCarousel4" class="carousel slide" data-ec-toggle="extended-carousel" data-ec-size="2">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div>
@@ -268,8 +268,70 @@
   <!-- CONTENT MODUL TEXT END -->
 </section>
 <!-- SECTION END -->
+
+  <div class="container my-5" data-ec-thumbnail="true">
+    <h1>Thumbnails</h1>
+    <!-- Main carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <div><img src="https://via.placeholder.com/400x401.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div><img src="https://via.placeholder.com/400x402.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div><img src="https://via.placeholder.com/400x403.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div><img src="https://via.placeholder.com/400x404.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div><img src="https://via.placeholder.com/400x405.jpg" class="img-fluid" alt="..."></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Thumbnail carousel -->
+    <div id="carouselExampleControls2" class="carousel slide mt-5" data-bs-ride="false" data-bs-interval="false"
+    data-ec-toggle="extended-carousel" data-ec-size="4">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div data-slide-number="0"><img src="https://via.placeholder.com/200x201.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div data-slide-number="1"><img src="https://via.placeholder.com/200x202.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div data-slide-number="2"><img src="https://via.placeholder.com/200x203.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div data-slide-number="3"><img src="https://via.placeholder.com/200x204.jpg" class="img-fluid" alt="..."></div>
+        </div>
+        <div class="carousel-item">
+          <div data-slide-number="4"><img src="https://via.placeholder.com/200x205.jpg" class="img-fluid" alt="..."></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
     
     <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ></script>
-    <script type="module" src="./js/slider-bs5.js"></script>
+    <script type="module" src="./js/extended-carousel.js"></script>
   </body>
 </html>
