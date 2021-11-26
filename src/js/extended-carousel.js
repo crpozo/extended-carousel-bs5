@@ -41,11 +41,10 @@ class Slider {
 			}
 		});
 	}
-
 	// Adding dynamic css transitions to existing stylesheet
 	setTransition( slidesToShow ) {
 		let styles = ''
-		let css = document.querySelector('link[href="./css/extended-carousel.css"]').sheet;
+		let css = document.querySelector('link[href*="extended-carousel.css"]').sheet;
 		if(slidesToShow > 1)
 			styles = 
 			`
