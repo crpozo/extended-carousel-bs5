@@ -7,7 +7,7 @@ Requirements:
 
 # Installation
 
-`npm i -D @werkraum/extended-carousel-bs5`
+`npm i -D extended-carousel-bs5`
 
 # Instructions
 
