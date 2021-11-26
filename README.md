@@ -12,7 +12,7 @@ Requirements:
 # Instructions
 
 ```
-Initialize funciontalities :   data-ec-toggle="extended-carousel"
+Initialize                 :   data-ec-toggle="extended-carousel"
 Number of slideshows       :   data-ec-size="4"
 Thumbnail slider           :   data-ec-thumbnail="true"
 ```
