@@ -44,7 +44,15 @@ class Slider {
 	// Adding dynamic css transitions to existing stylesheet
 	setTransition( slidesToShow ) {
 		let styles = ''
-		let css = document.querySelector('link[href*="extended-carousel.css"]').sheet;
+		let css = document.querySelector('style#extended-carousel-transitions');
+		if(!css) {
+			css = document.createElement('style');
+			css.id = 'extended-carousel-transitions';
+			css.rel = 'stylesheet';
+			css.type = 'text/css';
+			document.getElementsByTagName('head')[0].appendChild(css);
+		}
+
 		if(slidesToShow > 1)
 			styles = 
 			`
@@ -66,7 +74,7 @@ class Slider {
 				}
 			`;
 
-		css.insertRule(styles);
+		css.sheet.insertRule(styles);
 	}
 
 	setThumbnail(el) {
