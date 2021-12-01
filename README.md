@@ -11,6 +11,10 @@ Requirements:
 
 # Instructions
 
+Build dist files 
+
+`npm run build`
+
 ```
 Initialize                 :   data-ec-toggle="extended-carousel"
 Number of slideshows       :   data-ec-size="4"
