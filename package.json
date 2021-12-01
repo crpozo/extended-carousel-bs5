@@ -1,6 +1,6 @@
 {
   "name": "extended-carousel-bs5",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Extended Slider based on Bootstrap 5 using only carousel component and vanilla js.",
   "main": "index.js",
   "scripts": {
@@ -30,9 +30,10 @@
     "@babel/preset-env": "^7.16.4",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-csso": "^4.0.1",
     "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
     "gulp-terser": "^2.1.0",
+    "sass": "^1.44.0",
     "webpack": "^5.64.2",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0",

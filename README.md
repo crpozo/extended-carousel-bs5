@@ -17,60 +17,57 @@ Number of slideshows       :   data-ec-size="4"
 Thumbnail slider           :   data-ec-thumbnail="true"
 ```
 
-Demo inside src/index.html
+Demo inside dist/index.html
 
 # Usage
 
 ```
   Multiple columns example
 
-  <div class="container mt-5">
-    <div id="recipeCarousel" class="carousel slide" data-ec-toggle="extended-carousel" data-ec-size="4">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=1" class="img-fluid">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=2" class="img-fluid">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=3" class="img-fluid">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=4" class="img-fluid">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=5" class="img-fluid">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=6" class="img-fluid">
-          </div>
+  <div id="recipeCarousel" class="carousel slide" data-ec-toggle="extended-carousel" data-ec-size="4">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png/000/FFF?text=1" class="img-fluid">
         </div>
       </div>
-      <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
+      <div class="carousel-item">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png/000/FFF?text=2" class="img-fluid">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png/000/FFF?text=3" class="img-fluid">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png/000/FFF?text=4" class="img-fluid">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png/000/FFF?text=5" class="img-fluid">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png/000/FFF?text=6" class="img-fluid">
+        </div>
+      </div>
     </div>
+    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
   </div>
 
-  Thumbnail Example
+  Thumbnail
 
- <div class="container my-5" data-ec-thumbnail="true">
-    <h1>Thumbnails</h1>
+  <div data-ec-thumbnail="true">
     <!-- Main carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
       <div class="carousel-inner text-center">
@@ -100,7 +97,7 @@ Demo inside src/index.html
       </button>
     </div>
     <!-- Thumbnail carousel -->
-    <div id="carouselExampleControls2" class="carousel slide mt-5" data-bs-ride="false" data-bs-interval="false"
+    <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="false" data-bs-interval="false"
     data-ec-toggle="extended-carousel" data-ec-size="4">
       <div class="carousel-inner">
         <div class="carousel-item active">

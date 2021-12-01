@@ -2,8 +2,8 @@
 // Modules
 
 const gulp                = require('gulp'),
+      sass                = require('gulp-sass')(require('sass')),
       terser              = require('gulp-terser'),     // Minify js
-      csso                = require('gulp-csso'),       // Minify css
       babel               = require('gulp-babel'),      // Transpiler
       webpack             = require('webpack-stream'),  // Bundler
       rename              = require('gulp-rename'), 
@@ -27,13 +27,18 @@ var pathsJs = {
   out: paths.dist + 'js'
 };
 
-// Css source
-var pathsCss = {
-  in: [
-    paths.src + 'css/*.css'
-  ],
-  out: paths.dist + 'css'
+// Scss source
+// Scss options
+var scss = {
+  in: paths.src + 'scss/*.scss',
+  out: paths.dist + 'css/',
+  watch: paths.src + 'scss/**/*.scss',
+  sassOpts: {
+      outputStyle: 'compressed',
+      precison: 3,
+  }
 };
+
 
 //////////
 // Tasks
@@ -54,11 +59,11 @@ function jsTask() {
 
 
 // Compile css
-function cssTask() {
+function styleTask() {
   return (
-      src(pathsCss.in)
-      .pipe(csso())
-      .pipe(dest(pathsCss.out))
+      src(scss.in)
+      .pipe(sass(scss.sassOpts))
+      .pipe(dest(scss.out))
   )
 }
 
@@ -66,10 +71,10 @@ function cssTask() {
 // Watch
 function watchTask(){
   watch( paths.src + 'js/**/*.js', jsTask );
-  watch( paths.src + 'css/**/*.css', cssTask );
+  watch( paths.src + 'css/**/*.css', styleTask );
 }
 
 // Exports
 exports.js = jsTask;
-exports.css = cssTask;
+exports.css = styleTask;
 exports.watch = watchTask;
