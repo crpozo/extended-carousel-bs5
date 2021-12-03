@@ -1,4 +1,4 @@
-[data-ec-toggle] {
+[data-ec-toggle="responsive-carousel"] {
   .carousel-inner{
     .carousel-item.active, .carousel-item-next, .carousel-item-prev {
       display: flex;
@@ -7,8 +7,19 @@
   }
 }
 
-[data-ec-thumbnail] [data-slide-number] {
-  cursor: pointer;
+[data-ec-thumbnail="gallery"] {
+  .carousel-indicators {
+    position: unset;
+    margin: auto;
+    align-items: baseline;
+    div {
+      padding: 0.3em;
+      & > *{
+        width: 100%;
+        height: auto;
+      }
+    }   
+  }
 }
 
 @media (max-width: 1200px) {
@@ -18,19 +29,19 @@
 }
 
 @media (max-width: 1200px) and (min-width: 768px) {
-  [data-ec-toggle] {
+  [data-ec-toggle="responsive-carousel"] {
     .carousel-inner {
-      .carousel-item > div:nth-child(-n+2) {
+      .carousel-item > div:nth-child(-n+3) {
         display: block;
       }
 
       .carousel-item-next, .carousel-item-end.active { 
-        transform: translateX(50%);
+        transform: translateX(33.33%);
         transition: transform 0.5s linear;
       }
 
       .carousel-item-start.active, .carousel-item-prev {
-        transform: translateX(-50%);
+        transform: translateX(-33.33%);
         transition: transform 0.5s linear;
       }
 
@@ -42,13 +53,16 @@
 }
 
 @media (max-width: 767px) {
-  [data-ec-toggle] .carousel-inner .carousel-item > div:first-child {
+  [data-ec-toggle="responsive-carousel"] .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+  [data-ec-thumbnail] [data-ec-toggle="responsive-carousel"] .carousel-inner .carousel-item > div:nth-child(-n+2) {
     display: block;
   }
 }
 
 @media (min-width: 767px) { 
-  [data-ec-toggle] .carousel-item {
+  [data-ec-toggle="responsive-carousel"] .carousel-item {
     transition: none;
   }
 }

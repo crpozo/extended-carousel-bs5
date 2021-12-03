@@ -4,10 +4,14 @@ import Slider from './extended-carousel'
 (function () {
 
   var initialize = function() {
-    document.querySelectorAll(`.carousel[data-ec-toggle="${Slider.defaultSelector}"]`).forEach((el) => {
+    document.querySelectorAll(`[data-ec-toggle="${Slider.defaultSelector}"]`).forEach((el) => {
       const slider = new Slider(el);
     });
-    document.querySelectorAll(`[data-ec-thumbnail="true"]`).forEach((el) => {
+    document.querySelectorAll(`[data-ec-thumbnail="slider"]`).forEach((el) => {
+      const slider = new Slider(el);
+    });
+
+    document.querySelectorAll(`[data-ec-thumbnail="gallery"]`).forEach((el) => {
       const slider = new Slider(el);
     });
   }

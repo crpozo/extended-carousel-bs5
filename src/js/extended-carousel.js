@@ -8,7 +8,7 @@ const bootstrap = {
 
 class Slider {
 
-	static defaultSelector = 'extended-carousel';
+	static defaultSelector = 'responsive-carousel';
 	static defaultSize = 3;
 	selector;
 	slidesToShow;
@@ -16,14 +16,16 @@ class Slider {
 
 	constructor(el) {
 		this.el = el;
-		if(el.dataset.ecThumbnail)
-			this.setThumbnail(this.el);
-		else {
+		if(el.dataset.ecToggle) {
 			this.selector = Slider.defaultSelector;
 			this.slidesToShow = this.setSize(this.el);
 			this.setRespondsiveness(this.slidesToShow);
 			this.setTransition(this.slidesToShow);
 		}
+		if(el.dataset.ecThumbnail == 'slider') 
+			this.setThumbnail(this.el);
+		if(el.dataset.ecThumbnail == 'gallery') 
+			this.setControls(this.el);
 	}
 
 	setRespondsiveness( slidesToShow ) {
@@ -41,6 +43,7 @@ class Slider {
 			}
 		});
 	}
+
 	// Adding dynamic css transitions to existing stylesheet
 	setTransition( slidesToShow ) {
 		let styles = ''
@@ -52,7 +55,6 @@ class Slider {
 			css.type = 'text/css';
 			document.getElementsByTagName('head')[0].appendChild(css);
 		}
-
 		if(slidesToShow > 1)
 			styles = 
 			`
@@ -73,21 +75,17 @@ class Slider {
 					}
 				}
 			`;
-
 		css.sheet.insertRule(styles);
 	}
 
 	setThumbnail(el) {
-
 		if(!el.dataset.ecThumbnail)
 			return false;
-
 		let main = el.querySelectorAll('.carousel')[0];
 		let nav = el.querySelectorAll('.carousel')[1];
 
 		if(!main || !nav)
 			return false;
-
 		let mainBootstrap = bootstrap.Carousel.getOrCreateInstance(main);
 		let navBootstrap = bootstrap.Carousel.getOrCreateInstance(nav);
 
@@ -104,6 +102,30 @@ class Slider {
 				mainBootstrap.to(index);
 				e.preventDefault();
 			});
+		});
+	}
+
+	setControls(el) {
+		let button = el.querySelector('#controlCarousel');
+		let time = el.dataset.ecInterval ? parseInt(el.dataset.ecInterval) : 5000;
+		if(!button)
+			return false;
+
+		let carousel = bootstrap.Carousel.getOrCreateInstance(el, {
+			interval: time,
+			ride: "carousel"
+		});
+		carousel.cycle();
+		
+		button.addEventListener('click', function(){
+			if(!carousel._isPaused) {
+				carousel.pause();
+				button.innerHTML = 'Play';
+			}
+			else {
+				carousel.cycle();
+				button.innerHTML = 'Pause';
+			}
 		});
 	}
 

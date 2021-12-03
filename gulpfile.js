@@ -71,7 +71,7 @@ function styleTask() {
 // Watch
 function watchTask(){
   watch( paths.src + 'js/**/*.js', jsTask );
-  watch( paths.src + 'css/**/*.css', styleTask );
+  watch( paths.src + 'scss/**/*.scss', styleTask );
 }
 
 // Exports
