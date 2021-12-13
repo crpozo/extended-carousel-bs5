@@ -111,11 +111,9 @@ class Slider {
 		if(!button)
 			return false;
 
-		let carousel = bootstrap.Carousel.getOrCreateInstance(el, {
-			interval: time,
-			ride: "carousel"
-		});
-		carousel.cycle();
+			let carousel = bootstrap.Carousel.getOrCreateInstance(el, {
+				interval:time,
+			});
 		
 		button.addEventListener('click', function(){
 			if(!carousel._isPaused) {

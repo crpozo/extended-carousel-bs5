@@ -17,8 +17,8 @@ import Slider from './extended-carousel'
   }
 
   // in case the document is already rendered
-  if (document.readyState!='loading') initialize();
+  if (typeof bootstrap.Carousel.getInstance() && document.readyState!='loading') initialize();
   // modern browsers
-  else if (document.addEventListener) document.addEventListener('DOMContentLoaded', initialize);
+  else if (typeof bootstrap.Carousel.getInstance() && document.addEventListener) document.addEventListener('DOMContentLoaded', initialize);
 
 })();

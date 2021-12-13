@@ -121,7 +121,7 @@ Demo inside dist/index.html
 
   <!-- Play/Stop Carousel Example -->
 
-    <div id="carouselPlayStop" class="carousel slide" data-ec-thumbnail="gallery" data-ec-interval="2000">
+    <div id="carouselPlayStop" class="carousel slide" data-ec-thumbnail="gallery" data-ec-interval="5000">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="...">
@@ -142,10 +142,10 @@ Demo inside dist/index.html
         </button>
       </div>
       <div class="carousel-indicators justify-content-start">
-        <div> <img src="..." class="active" data-bs-target="#carouselPlayStop" data-bs-slide-to="0" alt="Slide 1"> </div>
-        <div> <img src="..." data-bs-target="#carouselPlayStop" data-bs-slide-to="1" alt="Slide 2"> </div>
-        <div> <img src="..." data-bs-target="#carouselPlayStop" data-bs-slide-to="2" alt="Slide 3"> </div>
-        <div> <button id="controlCarousel">Pause</button> </div>
+        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=1" type="button" class="active" data-bs-target="#carouselPlayStop" data-bs-slide-to="0" alt="Slide 1">
+        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=2" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="1" alt="Slide 2">
+        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=3" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="2" alt="Slide 3">
+        <button id="controlCarousel">Pause</button>
       </div>
     </div>
 ```
