@@ -56,7 +56,7 @@ Demo inside dist/index.html
   </div>
 
 ```
-![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/thumbnail.png)
+![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/multiple-columns.png)
 ```
   <!-- Thumbnail Carousel Example -->
 
@@ -116,7 +116,7 @@ Demo inside dist/index.html
   </div>
 
 ```
-![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/play-stop.png)
+![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/thumbnail.png)
 ```
   <!-- Play/Stop Carousel Example -->
 
@@ -143,4 +143,4 @@ Demo inside dist/index.html
   </div>
   
 ```
-![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/multiple-columns.png)
+![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/play-stop.png)
