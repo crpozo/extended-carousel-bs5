@@ -4,8 +4,22 @@
       display: flex;
       justify-content: space-around;
     }
+    .carousel-item img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
+
+[data-ec-thumbnail="slider"] {
+  .carousel-inner{   
+    .carousel-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
 
 [data-ec-thumbnail="gallery"] {
   .carousel-indicators {
