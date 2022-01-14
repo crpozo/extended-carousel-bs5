@@ -27,6 +27,7 @@ Demo inside dist/index.html
 
 # Usage
 
+
 ```
   <!-- Multiple Columns Carousel Example -->
 
@@ -54,6 +55,9 @@ Demo inside dist/index.html
     </a>
   </div>
 
+```
+![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/thumbnail.png)
+```
   <!-- Thumbnail Carousel Example -->
 
   <div data-ec-thumbnail="slider">
@@ -111,6 +115,9 @@ Demo inside dist/index.html
     </div>
   </div>
 
+```
+![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/play-stop.png)
+```
   <!-- Play/Stop Carousel Example -->
 
   <div id="carouselPlayStop" class="carousel slide" data-ec-thumbnail="gallery" data-ec-interval="5000">
@@ -136,3 +143,4 @@ Demo inside dist/index.html
   </div>
   
 ```
+![image](https://raw.githubusercontent.com/crpozo/images/main/extended-carousel-bs5/multiple-columns.png)
