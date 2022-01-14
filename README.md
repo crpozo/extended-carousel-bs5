@@ -42,26 +42,9 @@ Demo inside dist/index.html
           <img src="...">
         </div>
       </div>
-      <div class="carousel-item">
-        <div>
-          <img src="...">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div>
-          <img src="...">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div>
-          <img src="...">
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div>
-          <img src="...">
-        </div>
-      </div>
+      .
+      .
+      .
     </div>
     <a class="carousel-control-prev" href="#carouselMultipleColumns" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -72,6 +55,7 @@ Demo inside dist/index.html
   </div>
 
   <!-- Thumbnail Carousel Example -->
+
   <div data-ec-thumbnail="slider">
     <!-- Main -->
     <div id="carouselMain" class="carousel slide" data-ec-interval="5000" data-bs-ride="false" data-bs-interval="false">
@@ -86,21 +70,9 @@ Demo inside dist/index.html
             <img src="...">
           </div>
         </div>
-        <div class="carousel-item">
-          <div>
-            <img src="...">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="...">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="...">
-          </div>
-        </div>
+        .
+        .
+        .
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -124,21 +96,9 @@ Demo inside dist/index.html
             <img src="...">
           </div>
         </div>
-        <div class="carousel-item">
-          <div data-slide-number="2">
-            <img src="...">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div data-slide-number="3">
-            <img src="...">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div data-slide-number="4">
-            <img src="...">
-          </div>
-        </div>
+        .
+        .
+        .
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselNav" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -161,22 +121,16 @@ Demo inside dist/index.html
       <div class="carousel-item">
         <img src="...">
       </div>
-      <div class="carousel-item">
-        <img src="...">
-      </div>
-      <div class="carousel-item">
-        <img src="...">
-      </div>
-      <div class="carousel-item">
-        <img src="...">
-      </div>
+      .
+      .
+      .
     </div>
     <div class="carousel-indicators justify-content-start">
       <img src="..." type="button" class="active" data-bs-target="#carouselPlayStop" data-bs-slide-to="0" alt="Slide1">
       <img src="..." type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="1" alt="Slide 2">
-      <img src="..." type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="2" alt="Slide 3">
-      <img src="..." type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="3" alt="Slide 4">
-      <img src="..." type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="4" alt="Slide 5">
+      .
+      .
+      .
       <button id="controlCarousel">Pause</button>
     </div>
   </div>
