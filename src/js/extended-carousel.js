@@ -19,7 +19,7 @@ class Slider {
 		if(el.dataset.ecToggle) {
 			this.selector = Slider.defaultSelector;
 			this.slidesToShow = this.setSize(this.el);
-			this.setRespondsiveness(this.slidesToShow);
+			this.setResponsiveness(this.slidesToShow);
 			this.setTransition(this.slidesToShow);
 		}
 		if(el.dataset.ecThumbnail == 'slider') 
@@ -28,7 +28,7 @@ class Slider {
 			this.setControls(this.el);
 	}
 
-	setRespondsiveness( slidesToShow ) {
+	setResponsiveness( slidesToShow ) {
 		let slides = this.el.querySelectorAll(`.carousel-item`);
 		if(slidesToShow == 1)
 			return false;
