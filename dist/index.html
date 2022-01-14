@@ -9,137 +9,166 @@
     <title>Extended Carousel BS5</title>
   </head>
   
-  <body class="container">
-    <!-- Play/Stop Carousel Example -->
-    <div id="carouselPlayStop" class="carousel slide" data-ec-thumbnail="gallery" data-ec-interval="5000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://via.placeholder.com/1000x400.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/1000x400.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/1000x400.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/1000x400.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/1000x400.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <div class="carousel-indicators justify-content-start">
-        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=1" type="button" class="active" data-bs-target="#carouselPlayStop" data-bs-slide-to="0" alt="Slide 1">
-        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=2" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="1" alt="Slide 2">
-        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=3" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="2" alt="Slide 3">
-        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=4" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="3" alt="Slide 4">
-        <img src="https://via.placeholder.com/50/FF0000/FFFFFF?text=5" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="4" alt="Slide 5">
-        <button id="controlCarousel">Pause</button>
-      </div>
-    </div>
-
+  <body class="container my-5">
+    <h1 class="mb-3">Bootstrap 5 - Carousel Extension Demo</h1>
+    <p class="mb-5">Enables the addition of multiple columns, thubmnails and play/stop carousels</p>
     <!-- Multiple Columns Carousel Example -->
-
-    <div id="carouselMultipleColumns" class="carousel slide" data-ec-toggle="responsive-carousel" data-ec-size="5">
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=1">
+    <div class="row mt-3">
+      <h2 class="mb-4">Multiple columns: </h1>
+      <div id="carouselMultipleColumns" class="carousel slide" data-ec-toggle="responsive-carousel" data-ec-size="4">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div>
+              <img src="https://via.placeholder.com/600x400.png/000/FFF?text=1" alt="Extended carousel demo image">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="https://via.placeholder.com/600x400.png/000/FFF?text=2" alt="Extended carousel demo image">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="https://via.placeholder.com/600x400.png/000/FFF?text=3" alt="Extended carousel demo image">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="https://via.placeholder.com/600x400.png/000/FFF?text=4" alt="Extended carousel demo image">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="https://via.placeholder.com/600x400.png/000/FFF?text=5" alt="Extended carousel demo image">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <img src="https://via.placeholder.com/600x400.png/000/FFF?text=6" alt="Extended carousel demo image">
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=2">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=3">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=4">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=5">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <img src="https://via.placeholder.com/600x400.png/000/FFF?text=6">
-          </div>
-        </div>
+        <a class="carousel-control-prev" href="#carouselMultipleColumns" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselMultipleColumns" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
       </div>
-      <a class="carousel-control-prev bg-transparent w-aut" href="#carouselMultipleColumns" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next bg-transparent w-aut" href="#carouselMultipleColumns" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
     </div>
 
     <!-- Thumbnail Carousel Example -->
-
-    <div data-ec-thumbnail="slider">
-      <!-- Main -->
-      <div id="carouselMain" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
-        <div class="carousel-inner text-center">
-          <div class="carousel-item active">
-            <div><img src="https://via.placeholder.com/400?text=1" alt="..."></div>
+    <div class="row border-top border-2 mt-5 pt-5">
+      <h2 class="mb-4">Thumbnail: </h1>
+      <div data-ec-thumbnail="slider">
+        <!-- Main -->
+        <div id="carouselMain" class="carousel slide">
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <div>
+                <img src="https://via.placeholder.com/1500x500/000/FFF?text=1" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img src="https://via.placeholder.com/1500x500/000/FFF?text=2" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img src="https://via.placeholder.com/1500x500/000/FFF?text=3" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img src="https://via.placeholder.com/1500x500/000/FFF?text=4" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img src="https://via.placeholder.com/1500x500/000/FFF?text=5" alt="Extended carousel demo image">
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <div><img src="https://via.placeholder.com/400?text=2" alt="..."></div>
-          </div>
-          <div class="carousel-item">
-            <div><img src="https://via.placeholder.com/400?text=3" alt="..."></div>
-          </div>
-          <div class="carousel-item">
-            <div><img src="https://via.placeholder.com/400?text=4" alt="..."></div>
-          </div>
-          <div class="carousel-item">
-            <div><img src="https://via.placeholder.com/400?text=5" alt="..."></div>
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <!-- Thumbnail -->
+        <div id="carouselNav" class="carousel slide py-5" data-bs-ride="false" data-bs-interval="false" data-ec-toggle="responsive-carousel" data-ec-size="4">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div data-slide-number="0">
+                <img src="https://via.placeholder.com/200/000/FFF?text=1" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div data-slide-number="1">
+                <img src="https://via.placeholder.com/200/000/FFF?text=2" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div data-slide-number="2">
+                <img src="https://via.placeholder.com/200/000/FFF?text=3" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div data-slide-number="3">
+                <img src="https://via.placeholder.com/200/000/FFF?text=4" alt="Extended carousel demo image">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div data-slide-number="4">
+                <img src="https://via.placeholder.com/200/000/FFF?text=5" alt="Extended carousel demo image">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNav" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNav" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-      <!-- Nav -->
-      <div id="carouselNav" class="carousel slide"data-bs-ride="false" data-bs-interval="false" data-ec-toggle="responsive-carousel" data-ec-size="4">
+    </div>
+
+    <!-- Play/Stop Carousel Example -->
+    <div class="row border-top border-2 mt-5 pt-5">
+      <h2 class="mb-4">Play/Stop: </h1>
+      <div id="carouselPlayStop" class="carousel slide" data-ec-thumbnail="gallery" data-ec-interval="5000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div data-slide-number="0"><img src="https://via.placeholder.com/200?text=1" alt="..."></div>
+            <img src="https://via.placeholder.com/1300x500.jpg/000/FFF?text=1" alt="Extended carousel demo image">
           </div>
           <div class="carousel-item">
-            <div data-slide-number="1"><img src="https://via.placeholder.com/200?text=2" alt="..."></div>
+            <img src="https://via.placeholder.com/1300x500.jpg/000/FFF?text=2" alt="Extended carousel demo image">
           </div>
           <div class="carousel-item">
-            <div data-slide-number="2"><img src="https://via.placeholder.com/200?text=3" alt="..."></div>
+            <img src="https://via.placeholder.com/1300x500.jpg/000/FFF?text=3" alt="Extended carousel demo image">
           </div>
           <div class="carousel-item">
-            <div data-slide-number="3"><img src="https://via.placeholder.com/200?text=4" alt="..."></div>
+            <img src="https://via.placeholder.com/1300x500.jpg/000/FFF?text=4" alt="Extended carousel demo image">
           </div>
           <div class="carousel-item">
-            <div data-slide-number="4"><img src="https://via.placeholder.com/200?text=5" alt="..."></div>
+            <img src="https://via.placeholder.com/1300x500.jpg/000/FFF?text=5" alt="Extended carousel demo image">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNav" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselNav" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-indicators justify-content-start">
+          <img src="https://via.placeholder.com/50/000/FFF?text=1" type="button" class="active" data-bs-target="#carouselPlayStop" data-bs-slide-to="0" alt="Slide 1">
+          <img src="https://via.placeholder.com/50/000/FFF?text=2" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="1" alt="Slide 2">
+          <img src="https://via.placeholder.com/50/000/FFF?text=3" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="2" alt="Slide 3">
+          <img src="https://via.placeholder.com/50/000/FFF?text=4" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="3" alt="Slide 4">
+          <img src="https://via.placeholder.com/50/000/FFF?text=5" type="button" data-bs-target="#carouselPlayStop" data-bs-slide-to="4" alt="Slide 5">
+          <button id="controlCarousel">Pause</button>
+        </div>
       </div>
     </div>
 

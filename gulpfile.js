@@ -57,7 +57,6 @@ function jsTask() {
   )
 }
 
-
 // Compile css
 function styleTask() {
   return (
@@ -66,7 +65,6 @@ function styleTask() {
       .pipe(dest(scss.out))
   )
 }
-
 
 // Watch
 function watchTask(){

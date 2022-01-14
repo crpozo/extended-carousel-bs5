@@ -22,6 +22,12 @@
 
 
 [data-ec-thumbnail="gallery"] {
+  .carousel-inner{   
+    .carousel-item img {
+      width: 100%;
+      display: block;
+    }
+  }
   .carousel-indicators {
     position: unset;
     margin: auto;

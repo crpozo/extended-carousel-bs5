@@ -79,6 +79,7 @@ class Slider {
 	}
 
 	setThumbnail(el) {
+		let time = el.dataset.ecInterval ? parseInt(el.dataset.ecInterval) : 5000;
 		if(!el.dataset.ecThumbnail)
 			return false;
 		let main = el.querySelectorAll('.carousel')[0];
